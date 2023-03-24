@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome to Poker Game in Python’s documentation! &#8212; Poker Game in Python 2023-02-20 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-poker-game-in-python-s-documentation">
+<h1>Welcome to Poker Game in Python’s documentation!<a class="headerlink" href="#welcome-to-poker-game-in-python-s-documentation" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<span class="target" id="module-cardlib"></span><dl class="py class">
+<dt class="sig sig-object py" id="cardlib.AceCard">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">AceCard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cardlib.Suit" title="cardlib.Suit"><span class="pre">Suit</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.AceCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cardlib.PlayingCard" title="cardlib.PlayingCard"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlayingCard</span></code></a></p>
+<p>A class that creates Aces playing cards</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.Hand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">Hand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cards</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.Hand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class represent a hand with cards</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="cardlib.Hand.best_poker_hand">
+<span class="sig-name descname"><span class="pre">best_poker_hand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_cards</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.Hand.best_poker_hand" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function determines the best pokerhand that a hand can achieve
+:param table_cards: Cards that is shared by all players and can be used to create a pokerhand
+:return: The pokerhand with the highest rank and the highest card</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.HandValue">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">HandValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.HandValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
+<p>Enum class that represent all the different hand types possible in poker</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.JackCard">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">JackCard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cardlib.Suit" title="cardlib.Suit"><span class="pre">Suit</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.JackCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cardlib.PlayingCard" title="cardlib.PlayingCard"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlayingCard</span></code></a></p>
+<p>A class that crates Jack playing cards
+:param suit: suit of card
+:type suit: Suit</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.KingCard">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">KingCard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cardlib.Suit" title="cardlib.Suit"><span class="pre">Suit</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.KingCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cardlib.PlayingCard" title="cardlib.PlayingCard"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlayingCard</span></code></a></p>
+<p>A class that creates King playing cards</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.NumberedCard">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">NumberedCard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cardlib.Suit" title="cardlib.Suit"><span class="pre">Suit</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.NumberedCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cardlib.PlayingCard" title="cardlib.PlayingCard"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlayingCard</span></code></a></p>
+<p>A class representing all the numbered cards e.g. card 2-10</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.PlayingCard">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">PlayingCard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.PlayingCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Parent class for the different types of playing cards</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.PokerHand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">PokerHand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cards</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.PokerHand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class is used to declare the different available poker-hands through static methods</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="cardlib.PokerHand.check">
+<span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.PokerHand.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method loops through the static methods until it finds the best pokerhand
+:return: Best pokerhand and the highest card in that hand
+:type: tuple</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.QueenCard">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">QueenCard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cardlib.Suit" title="cardlib.Suit"><span class="pre">Suit</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.QueenCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cardlib.PlayingCard" title="cardlib.PlayingCard"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlayingCard</span></code></a></p>
+<p>A class that creates Queen playing cards</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.StandardDeck">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">StandardDeck</span></span><a class="headerlink" href="#cardlib.StandardDeck" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class is used for representing a standard deck of cards. The deck will contain 52 unique cards</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cardlib.Suit">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cardlib.</span></span><span class="sig-name descname"><span class="pre">Suit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cardlib.Suit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code></p>
+<p>Enum class that represent each Suit</p>
+</dd></dl>
+
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Poker Game in Python</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Niclas P, Maithri L J.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
